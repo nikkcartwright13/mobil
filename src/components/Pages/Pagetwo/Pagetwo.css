@@ -1,0 +1,43 @@
+.Cards{
+    display: flex;
+    gap: 10px;
+}
+
+.parentContainer{
+    width: 100%;
+}
+
+@media screen and (max-width:1200px) {
+ .Cards{
+    flex-direction: column;
+ }
+ .parentContainer{
+    height: 9rem;
+ }
+}
+@media screen and (max-width: 768px) {
+    .Cards{
+        width: 90%;
+    }
+}
+
+/* Chart Test*/
+@media screen and (max-width: 1200px) {
+
+    .SectionTwo{
+        width: 170%;
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .SectionTwo{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 18rem;
+    }
+    .css-bhp9pd-MuiPaper-root-MuiCard-root{
+        width: 220%;
+    }
+}
