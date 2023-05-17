@@ -1,0 +1,42 @@
+.InfoCard{
+    display: flex;
+    flex: 1;
+    height: 6rem!important;
+    border-radius: 0.7rem;
+    position: relative;
+    cursor: pointer;
+    padding: 1.2rem;
+    color: white;
+}
+
+
+
+.CardTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.CardTitle>span{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.CardValue{
+    flex: 1;
+    display: flex;
+    font-weight:500;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: flex-end; 
+}
+.CardValue>span:nth-child(2){
+    font-size: 22px;
+    font-weight: bold;
+}
+.CardValue>span:nth-child(3){
+    font-size: 12px;
+
+}
+
+

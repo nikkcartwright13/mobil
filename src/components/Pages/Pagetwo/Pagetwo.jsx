@@ -1,17 +1,20 @@
 import React from 'react'
-import PageTwoCard from './PageTwoCard'
+// import PageTwoCard from './PageTwoCard'
 import { Card } from '@mui/material'
 import Charttwo from './Chart'
+import Cardstwotst from '../../CardTst/CardTwo/Cards/Cardstwotst'
+import Cardstwotsts from '../../CardTst/CardTwo/Cards/Cardstwotsts'
 
 const Pagetwo = () => {
   return (
     <div className='Main'>
       <h3>განაცხადები სტატუსების მიხედვით</h3>
-      <PageTwoCard />
+      {/* <PageTwoCard /> */}
+      <Cardstwotst />
+      <Cardstwotsts  />
       <div className='SectionTwo'>
-        <h3>Title of chart</h3>
-        <Card >
-           <Charttwo  />
+        <Card style={{ marginTop: '20px' }}>
+          <Charttwo />
         </Card>
       </div>
     </div>
