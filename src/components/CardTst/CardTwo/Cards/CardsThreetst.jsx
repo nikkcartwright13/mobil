@@ -1,11 +1,11 @@
 import React from 'react'
 import './cardstwotst.css'
-import { TestThreeCrdTwo } from '../../../../Data/TestData/TestData'
+import { TestTwoCrdTwo } from '../../../../Data/TestData/TestData'
 import Cardtwotst from '../Card/cardtwotst'
-const Cardstwotsts = () => {
+const CardsThreetst = () => {
     return (
         <div className="Cards">
-            {TestThreeCrdTwo.map((card) => {
+            {TestTwoCrdTwo.map((card) => {
                 return (
                     <div className='parentContainer'>
                         <Cardtwotst
@@ -20,4 +20,4 @@ const Cardstwotsts = () => {
     )
 }
 
-export default Cardstwotsts
+export default CardsThreetst

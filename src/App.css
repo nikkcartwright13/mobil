@@ -14,14 +14,7 @@
 }
 
 .App {
-  /* padding: 0.5rem 3.5rem; */
   color: var(--black);
-  /* background: linear-gradient(
-    106.37deg,
-    #ffe1bc 29.63%,
-    #ffcfd1 51.55%,
-    #f3c6f1 90.85%
-  ); */
   background: linear-gradient(283deg, rgba(236,242,244,1) 12%, rgba(236,242,244,1) 93%);
   height: 100vh;
   display: flex;

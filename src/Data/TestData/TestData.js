@@ -3,7 +3,7 @@ export const TestCrd = [
     {
         title: "დაფიქსირებული განაცხადების რაოდენობა",
         color: {
-            backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
+            backGround: "#ffffff",
             boxRadius: "0px 10px 20px 0px #e0c6f5",
             border: "2px solid #f0f0f0"
         },
@@ -13,7 +13,7 @@ export const TestCrd = [
     {
         title: "საშუალო შესრულებული მაჩვენებელი",
         color: {
-            backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
+            backGround: "#ffffff",
             boxRadius: "0px 10px 20px 0px #e0c6f5",
             border: "2px solid #f0f0f0"
         },
@@ -23,7 +23,7 @@ export const TestCrd = [
     {
         title: "დარიცხული კომპენსაციები ლარში",
         color: {
-            backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
+            backGround: "#ffffff",
             boxRadius: "0px 10px 20px 0px #e0c6f5",
             border: "2px solid #f0f0f0"
         },
@@ -37,7 +37,7 @@ export const TestTwoCrdOne = [
     {
         title: "დროულად დასრულებული",
         color: {
-            backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
+            backGround: "#ffffff",
             boxRadius: "0px 10px 20px 0px #e0c6f5",
             border: "2px solid #f0f0f0"
         },
@@ -47,7 +47,7 @@ export const TestTwoCrdOne = [
     {
         title: "ვადაგადაცილებით დასრულებული",
         color: {
-            backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
+            backGround: "#ffffff",
             boxRadius: "0px 10px 20px 0px #e0c6f5",
             border: "2px solid #f0f0f0"
         },
@@ -57,7 +57,7 @@ export const TestTwoCrdOne = [
     {
         title: "მიმდინარე",
         color: {
-            backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
+            backGround: "#ffffff",
             boxRadius: "0px 10px 20px 0px #e0c6f5",
             border: "2px solid #f0f0f0"
         },
@@ -74,7 +74,7 @@ export const TestTwoCrdTwo = [
     {
         title: "რეაგირების გარეშე",
         color: {
-            backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
+            backGround: "#ffffff",
             boxRadius: "0px 10px 20px 0px #e0c6f5",
             border: "2px solid #f0f0f0"
         },
@@ -84,7 +84,7 @@ export const TestTwoCrdTwo = [
     {
         title: "დახარვეზებული",
         color: {
-            backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
+            backGround: "#ffffff",
             boxRadius: "0px 10px 20px 0px #e0c6f5",
             border: "2px solid #f0f0f0"
         },
@@ -94,13 +94,49 @@ export const TestTwoCrdTwo = [
     {
         title: "რეაგირების გარეშე",
         color: {
-            backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
+            backGround: "#ffffff",
             boxRadius: "0px 10px 20px 0px #e0c6f5",
             border: "2px solid #f0f0f0"
         },
         value: "50,000",
 
     },
+]
+
+
+export const TestThreeCrdTwo = [
+
+    {
+        title: "რედაქტირების მოთხოვნები",
+        color: {
+            backGround: "#ffffff",
+            boxRadius: "0px 10px 20px 0px #e0c6f5",
+            border: "2px solid #f0f0f0"
+        },
+        value: "50,000",
+
+    },
+    {
+        title: "დაკმაყოფილდა",
+        color: {
+            backGround: "#ffffff",
+            boxRadius: "0px 10px 20px 0px #e0c6f5",
+            border: "2px solid #f0f0f0"
+        },
+        value: "50,000",
+
+    },
+    {
+        title: "ჯამური ჩანაწერების",
+        color: {
+            backGround: "#ffffff",
+            boxRadius: "0px 10px 20px 0px #e0c6f5",
+            border: "2px solid #f0f0f0"
+        },
+        value: "50,000",
+
+    },
+
 ]
 
 

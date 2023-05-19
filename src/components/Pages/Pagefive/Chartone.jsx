@@ -3,67 +3,88 @@ import ReactApexChart from 'react-apexcharts';
 
 function Chartone() {
 
-    const series = [
-        44, 55, 35, 43, 22, 12
+
+    const series = [{
+        name: 'წყვეტის მიზეზის (შიდა/გარე)',
+        data: [44]
+    },
+    {
+        name: 'წყვეტის დაწყება/დასრულების დრო',
+        data: [0, 55]
+    },
+    {
+        name: 'დუბლირებული ჩანაწერის წაშლა',
+        data: [0, 0, 35]
+    },
+    {
+        name: 'რეაგირების თარიღის ცვლილება',
+        data: [0, 0, 0, 43]
+    },
+    {
+        name: 'ატვირთული დოკუმენტის ჩანაცვლება',
+        data: [0, 0, 0, 0, 22]
+    },
+    {
+        name: 'დანარჩენი',
+        data: [0, 0, 0, 0, 0, 12]
+    },
+
+
     ]
 
     const options = {
         chart: {
-            width: 450,
-            type: 'donut',
+            type: 'bar',
+            stacked: true,
             toolbar: {
                 show: false
             }
-        },
 
-        legend: {
-            position: 'right',
-            horizontalAlign: "left",
-        
-            fontSize: "14px"
         },
-        plotOptions: {
-            pie: {
-                startAngle: -90,
-                endAngle: 90,
-                offsetY: 10
-            }
-        },
-        grid: {
-            padding: {
-                bottom: -140,
-                top: -0,
-                right: 100
+        yaxis: {
+            title: {
+                text: undefined
             },
-
+        },
+        fill: {
+            opacity: 1
+        },
+        colors: ['rgb(0, 143, 251)', 'rgb(0, 227, 150)', 'rgb(254, 176, 25)', 'rgb(255, 69, 96)', 'rgb(119, 93, 208)', '#2b908f',
+        ],
+        stroke: {
+            width: 1,
+            colors: ['#fff']
+        },
+        xaxis: {
+            labels: {
+                show: false
+            }
         },
         dataLabels: {
             enabled: true,
             style: {
-                fontSize: "12px",
-                fontWeight: "regular"
-            },
-            dropShadow: {
-                enabled: false
+                fontSize: "16px",
+                fontWeight: "bold"
             }
         },
-        labels: ['წყვეტის მიზეზის (შიდა/გარე)', 'წყვეტის დაწყება/დასრულების დრო', 'დუბლირებული ჩანაწერის წაშლა  ', 'რეაგირების თარიღის ცვლილება', 'ატვირთული დოკუმენტის ჩანაცვლება', "დანარჩენი"],
+        legend: {
+            position: 'left',
+            horizontalAlign: "bottom",
+            itemMargin: {
+                horizontal: 5,
+                vertical: 2,
 
-        title: {
-            text: 'ტოპ 5 რედაქტირების მოთხოვნა',
-            align: 'top',
-            floating: true,
+            },
+            fontSize: '15px',
         },
 
     }
 
 
 
-
-
     return (
         <div>
-            <ReactApexChart options={options} series={series} type="donut"   />
+            <ReactApexChart options={options} series={series} type="bar" height={200} />
         </div>
     )
 }

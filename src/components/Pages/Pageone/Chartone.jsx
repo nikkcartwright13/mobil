@@ -99,11 +99,7 @@ const Chartone = () => {
 
 
     },
-    // title: {
-    //   text: 'შესრულების მაჩვენებელი %',
-    //   align: 'left',
-    //   floating: true,
-    // },
+
 
 
   }
