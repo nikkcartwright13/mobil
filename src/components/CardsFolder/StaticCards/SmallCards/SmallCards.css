@@ -1,0 +1,63 @@
+.InfoCardTwo{
+    display: flex;
+    flex: 1;
+    height: 3rem!important;
+    border-radius: 0.7rem;
+    position: relative;
+    cursor: pointer;
+    padding: 1rem;
+    
+}
+.CardTitleTwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #b4b4b4;
+}
+.CardTitleTwo>span{
+    font-size: 15px;
+    font-weight:600;
+}
+
+.CardValueTwo{
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: flex-end; 
+    color: dodgerblue;
+    font-weight:600;
+}
+.CardValueTwo>span:nth-child(2){
+    font-size: 22px;
+
+}
+.CardValueTwo>span:nth-child(3){
+    font-size: 12px;
+
+}
+
+/*                   */
+.SmallCards{
+    display: flex;
+    gap: 10px;
+}
+
+.SmallParentContainer{
+    width: 100%;
+    margin-top: 8px;
+}
+
+@media screen and (max-width:1200px) {
+ .SmallCards{
+    flex-direction: column;
+ }
+ .SmallParentContainer{
+    height: 6.2rem;
+ }
+}
+@media screen and (max-width: 768px) {
+    .SmallCards{
+        width: 90%;
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react'
-import ChartOne from './Chartone'
-import Charttwo from './Charttwo'
+import ChartThree from '../../Charts/ChartThree'
+import ChartFour from '../../Charts/ChartFour'
 
 
 const Pagefour = () => {
@@ -8,10 +8,10 @@ const Pagefour = () => {
     <div className='Main'>
        <h3>SAIDI / SAIFI</h3>
        <div className='SectionTwo'>
-       <ChartOne/>
+       <ChartThree/>
        </div>
        <div className='SectionTwo'>
-       <Charttwo/>
+       <ChartFour/>
        </div>
        
      

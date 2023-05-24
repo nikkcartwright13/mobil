@@ -1,13 +1,13 @@
 import React from 'react'
-import Chartone from './Chartone'
-import CardsThreetst from '../../CardTst/CardTwo/Cards/CardsThreetst'
+import ChartFive from '../../Charts/ChartFive'
+import Pagethreecard from '../../CardsFolder/StaticCards/SmallCards/Cards/Pagethreecard'
 const Pagefive = () => {
   return (
     <div className='Main'>
       <h3>რედაქტირების მოთხოვნები</h3>
-      <CardsThreetst/>
+      <Pagethreecard/>
       <div className='SectionTwo'>
-        <Chartone/>
+        <ChartFive/>
       </div>
     </div>
   )
