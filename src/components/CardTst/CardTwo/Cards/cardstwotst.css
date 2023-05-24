@@ -5,6 +5,7 @@
 
 .parentContainer{
     width: 100%;
+    margin-top: 8px;
 }
 
 @media screen and (max-width:1200px) {
@@ -12,7 +13,7 @@
     flex-direction: column;
  }
  .parentContainer{
-    height: 9rem;
+    height: 6.2rem;
  }
 }
 @media screen and (max-width: 768px) {

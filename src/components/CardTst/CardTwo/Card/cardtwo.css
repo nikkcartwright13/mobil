@@ -8,16 +8,12 @@
     padding: 1rem;
     
 }
-
-
-
 .CardTitleTwo{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     color: #b4b4b4;
 }
-
 .CardTitleTwo>span{
     font-size: 15px;
     font-weight:600;
