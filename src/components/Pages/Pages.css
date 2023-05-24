@@ -3,6 +3,15 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+.SectionTwo{
+    width: 100%;
+    padding: 5px,5px,5px,5px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(18, 22, 33, .12);
+    margin-top: 20px;
+}
 @media screen and (max-width:1200px) {
     .Main{
         justify-content: flex-start;
@@ -14,10 +23,20 @@
     .Main{
         align-items: center;
     }
-    .css-bhp9pd-MuiPaper-root-MuiCard-root{
-        width: 220%;
+    .SectionTwo{
+        width: 90%;
+        padding: 5px,5px,5px,5px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 1px 4px rgba(18, 22, 33, .12);
+    }
+   
+    /* .css-bhp9pd-MuiPaper-root-MuiCard-root{
+        width: 120%;
+       
+        
     }
     .css-s18byi{
         width: 210%;
-    }
+    } */
 }
