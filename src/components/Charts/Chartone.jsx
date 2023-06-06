@@ -82,8 +82,8 @@ const Chartone = () => {
     dataLabels: {
       enabled: true,
       style: {
-        fontSize: "15px",
-        fontWeight: "bold"
+        fontSize: window.innerWidth <= 768 ? '6px' : '13px',
+        fontWeight: 'bold'
       }
     },
     legend: {

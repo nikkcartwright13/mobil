@@ -1,39 +1,42 @@
-import React, { useState } from 'react'
-import "react-circular-progressbar/dist/styles.css";
+import React, { useState } from 'react';
+import { motion } from "framer-motion";
 import { CircularProgressbar } from "react-circular-progressbar";
 import { UilTimes } from '@iconscout/react-unicons';
-import { motion } from "framer-motion";
 import Chart from 'react-apexcharts';
 import '../DinamicCard.css'
-
 
 const Card = (props) => {
     const [expanded, setExpanded] = useState(false);
 
+    const toggleExpanded = () => {
+        setExpanded(!expanded);
+    };
+
     return (
         <motion.div>
-            {
-                expanded ?
-                    < ExpandedCard param={props} setExpanded={() => setExpanded(false)} /> :
-                    <CompactCard param={props} setExpanded={() => setExpanded(true)} />
-            }
+            {expanded ? (
+                <ExpandedCard param={props} toggleExpanded={toggleExpanded} />
+            ) : (
+                <CompactCard param={props} toggleExpanded={toggleExpanded} />
+            )}
         </motion.div>
-    )
-}
+    );
+};
 
-function CompactCard({ param, setExpanded }) {
+function CompactCard({ param, toggleExpanded }) {
     const Png = param.png;
-    return (
-        <motion.div className="CompactCard" style={{
-            background: param.color.backGround,
-            boxShadow: param.color.boxShadow
-        }}
-            onClick={setExpanded}
-        >
 
+    return (
+        <motion.div
+            className="CompactCard"
+            style={{
+                background: param.color.backGround,
+                boxShadow: param.color.boxShadow
+            }}
+            onClick={toggleExpanded}
+        >
             <div className="radialBar">
-                <CircularProgressbar value={param.barValue}
-                    text={`${param.barValue}%`} />
+                <CircularProgressbar value={param.barValue} text={`${param.barValue}%`} />
                 <span>{param.title}</span>
             </div>
             <div className="detail">
@@ -42,11 +45,10 @@ function CompactCard({ param, setExpanded }) {
                 <span></span>
             </div>
         </motion.div>
-    )
+    );
 }
- /// Table
-function ExpandedCard({ param, setExpanded }) {
 
+function ExpandedCard({ param, toggleExpanded }) {
     const data = {
         options: {
             chart: {
@@ -72,9 +74,8 @@ function ExpandedCard({ param, setExpanded }) {
             stroke: {
                 curve: "smooth",
                 colors: ["white"],
-
             },
-            toolip: {
+            tooltip: {
                 x: {
                     format: "dd/MM/yy HH:mm"
                 },
@@ -83,20 +84,21 @@ function ExpandedCard({ param, setExpanded }) {
                 show: true,
             },
             xaxis: {
-                type: "datatime",
+                type: "datetime",
             },
         }
-    }
+    };
+
     return (
-        <motion.div className='ExpandedCard'
+        <motion.div
+            className='ExpandedCard'
             style={{
                 background: param.color.backGround,
                 boxShadow: param.color.boxShadow
             }}
         >
             <div style={{ alignSelf: 'flex-end', cursor: 'pointer', color: 'white' }}>
-                <UilTimes onClick={setExpanded}
-                />
+                <UilTimes onClick={toggleExpanded} />
             </div>
             <span>{param.title}</span>
             <div className="chartContainer">
@@ -104,8 +106,7 @@ function ExpandedCard({ param, setExpanded }) {
             </div>
             <span>Last 24 hours</span>
         </motion.div>
-
-    )
+    );
 }
 
-export default Card
+export default Card;
