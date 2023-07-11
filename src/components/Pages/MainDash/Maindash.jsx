@@ -6,7 +6,7 @@ const Maindash = () => {
   return (
     <>
       <div className="Main">
-        <h3>მთავარი გვერდი</h3>
+        <h3>გამოსატანი სტატისტიკები</h3>
         <DinamicCards />
         <Table />
       </div>
